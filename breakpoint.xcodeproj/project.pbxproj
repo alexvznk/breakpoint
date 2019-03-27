@@ -15,6 +15,8 @@
 		FA740C90222347050072DDE2 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA740C8F222347050072DDE2 /* AuthService.swift */; };
 		FAB1EBEC224A0FC500D9093B /* CreateGroupsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB1EBEB224A0FC500D9093B /* CreateGroupsVC.swift */; };
 		FAB1EBEE224B0B3800D9093B /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB1EBED224B0B3800D9093B /* UserCell.swift */; };
+		FAB1EBF0224B4B1100D9093B /* GroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB1EBEF224B4B1100D9093B /* GroupCell.swift */; };
+		FAB1EBF2224B4FB600D9093B /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB1EBF1224B4FB600D9093B /* Group.swift */; };
 		FAD2F295222278A500BBCD66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD2F294222278A500BBCD66 /* AppDelegate.swift */; };
 		FAD2F297222278A500BBCD66 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD2F296222278A500BBCD66 /* FeedVC.swift */; };
 		FAD2F299222278A500BBCD66 /* GroupsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD2F298222278A500BBCD66 /* GroupsVC.swift */; };
@@ -41,6 +43,8 @@
 		FA740C8F222347050072DDE2 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		FAB1EBEB224A0FC500D9093B /* CreateGroupsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroupsVC.swift; sourceTree = "<group>"; };
 		FAB1EBED224B0B3800D9093B /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		FAB1EBEF224B4B1100D9093B /* GroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCell.swift; sourceTree = "<group>"; };
+		FAB1EBF1224B4FB600D9093B /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
 		FAD2F291222278A500BBCD66 /* breakpoint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = breakpoint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAD2F294222278A500BBCD66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAD2F296222278A500BBCD66 /* FeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
@@ -144,6 +148,7 @@
 				FA740C8D222344520072DDE2 /* ShadowView.swift */,
 				FAF03A25222BB6E800BD7245 /* FeedCell.swift */,
 				FAB1EBED224B0B3800D9093B /* UserCell.swift */,
+				FAB1EBEF224B4B1100D9093B /* GroupCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -152,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				FAF03A27222BB91600BD7245 /* Message.swift */,
+				FAB1EBF1224B4FB600D9093B /* Group.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -312,11 +318,13 @@
 				FAF03A24222BA59100BD7245 /* UIViewExt.swift in Sources */,
 				FAF03A26222BB6E800BD7245 /* FeedCell.swift in Sources */,
 				FAF03A20222B8C9900BD7245 /* MeVC.swift in Sources */,
+				FAB1EBF0224B4B1100D9093B /* GroupCell.swift in Sources */,
 				FA740C8822233A310072DDE2 /* AuthVC.swift in Sources */,
 				FAD2F299222278A500BBCD66 /* GroupsVC.swift in Sources */,
 				FA740C8A22233AC80072DDE2 /* LoginVC.swift in Sources */,
 				FA740C90222347050072DDE2 /* AuthService.swift in Sources */,
 				FAB1EBEC224A0FC500D9093B /* CreateGroupsVC.swift in Sources */,
+				FAB1EBF2224B4FB600D9093B /* Group.swift in Sources */,
 				FAB1EBEE224B0B3800D9093B /* UserCell.swift in Sources */,
 				FAD2F295222278A500BBCD66 /* AppDelegate.swift in Sources */,
 				FA740C8E222344520072DDE2 /* ShadowView.swift in Sources */,
