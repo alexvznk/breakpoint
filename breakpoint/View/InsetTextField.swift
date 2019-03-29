@@ -30,7 +30,9 @@ class InsetTextField: UITextField {
     }
     
     func setupView() {
+        if placeholder != nil {
         let placeholder = NSAttributedString(string: self.placeholder!, attributes: [NSAttributedStringKey.foregroundColor: #colorLiteral(red: 0.4647747874, green: 0.7745169401, blue: 0.3634208441, alpha: 1)])
         self.attributedPlaceholder = placeholder
+        }
     }
 }

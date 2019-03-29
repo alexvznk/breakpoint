@@ -11,6 +11,7 @@ import Foundation
 class Message {
     private var _content: String
     private var _senderId: String
+    private var _username: String
     
     var content: String {
         return _content
@@ -20,8 +21,13 @@ class Message {
         return _senderId
     }
     
-    init(content: String, senderId: String) {
+    var username: String {
+        return _username
+    }
+    
+    init(content: String, senderId: String, username: String) {
         _content = content
         _senderId = senderId
+        _username = username
     }
 }

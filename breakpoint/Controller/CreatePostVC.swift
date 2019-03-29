@@ -18,7 +18,7 @@ class CreatePostVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         textView.delegate = self
-        sendBtn.bindToKeyboard()
+        sendBtn.bindKeyboard()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -29,7 +29,7 @@ class CreatePostVC: UIViewController {
     @IBAction func sendBtnWasPressed(_ sender: Any) {
         if textView.text != "" && textView.text != "Say something here..." {
             sendBtn.isEnabled = false
-            DataService.instance.uploadPost(withMessage: textView.text!, forUID: (Auth.auth().currentUser?.uid)!, withGroupKey: nil) { (isComplete) in
+            DataService.instance.uploadPost(withMessage: textView.text!, forUID: (Auth.auth().currentUser?.uid)!, withUsername: (Auth.auth().currentUser?.email)!, withGroupKey: nil) { (isComplete) in
                 if isComplete {
                     self.sendBtn.isEnabled = true
                     self.view.endEditing(true)
